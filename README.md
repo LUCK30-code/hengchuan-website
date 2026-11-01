@@ -2,7 +2,8 @@
 
 一个纯手写的响应式单页官网，用来练习「结构 → 样式 → 交互 → 上线」的完整流程。
 
-- **在线预览**：`〔部署后把链接填在这里〕`
+- **在线预览**：https://luck30-code.github.io/hengchuan-website/
+- **代码仓库**：https://github.com/LUCK30-code/hengchuan-website
 - **技术栈**：HTML + CSS + 原生 JavaScript，零框架、零依赖、零构建
 - **作者**：陆康贤 ｜ 2026.11
 
