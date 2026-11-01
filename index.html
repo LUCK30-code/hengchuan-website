@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>衡川智能 | 工业视觉检测设备</title>
+  <meta name="description" content="衡川智能专注工业视觉检测十三年，为 3C、汽配、新能源行业提供光学方案、算法平台与产线集成。">
+  <!-- CSS 引入方式：外链式（课程 4.1.2.1） -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==================== 1. 顶部导航栏（课程 4.4.2.1 flex 布局） ==================== -->
+  <div class="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-mark">H</span>
+        <span class="logo-text">衡川智能</span>
+      </div>
+      <ul class="nav">
+        <li><a href="#home">首页</a></li>
+        <li><a href="#product">产品方案</a></li>
+        <li><a href="#spec">技术参数</a></li>
+        <li><a href="#about">关于我们</a></li>
+        <li><a href="#contact">联系我们</a></li>
+      </ul>
+      <a class="header-btn" href="#contact">预约演示</a>
+    </div>
+  </div>
+
+  <!-- ==================== 2. 首屏 Banner ==================== -->
+  <div class="banner" id="home">
+    <div class="container">
+      <p class="banner-tag">工业视觉检测 · 自研算法平台</p>
+      <h1 class="banner-title">让每一台设备<br>都<span>看得见</span>缺陷</h1>
+      <p class="banner-desc">
+        十三年只做一件事：把人工目检换成稳定的机器判断。
+        从光学方案、相机选型到产线集成，我们交付的是一整条能跑起来的检测链路。
+      </p>
+      <div class="banner-btns">
+        <a class="btn btn-primary" href="#contact">预约产线演示</a>
+        <a class="btn btn-outline" href="#product">查看产品</a>
+      </div>
+
+      <!-- 数据展示（flex 四等分） -->
+      <ul class="banner-stats">
+        <li>
+          <p class="stat-num">13<span>年</span></p>
+          <p class="stat-label">聚焦工业视觉</p>
+        </li>
+        <li>
+          <p class="stat-num">300<span>+</span></p>
+          <p class="stat-label">服务制造企业</p>
+        </li>
+        <li>
+          <p class="stat-num">99.2<span>%</span></p>
+          <p class="stat-label">典型场景检出率</p>
+        </li>
+        <li>
+          <p class="stat-num">24<span>h</span></p>
+          <p class="stat-label">现场响应时效</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ==================== 3. 产品方案（盒子模型 + flex，课程 4.3.2） ==================== -->
+  <div class="section" id="product">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-tag">产品方案</p>
+        <h2 class="section-title">三条产品线，覆盖主流检测场景</h2>
+        <p class="section-desc">标准机型可直接部署，非标场景在标准平台上做定制。</p>
+      </div>
+
+      <!-- 卡片列表：父元素 flex，子元素三等分 -->
+      <ul class="card-list">
+        <li class="card">
+          <img class="card-img" src="images/product-1.svg" alt="HC-V300 高速外观检测平台">
+          <div class="card-body">
+            <p class="card-tag">标准机型</p>
+            <h3 class="card-title">HC-V300 高速检测平台</h3>
+            <p class="card-desc">面向 3C 结构件与精密五金，单工位节拍可压到 0.4 秒，换型只需更换治具与配方。</p>
+          </div>
+        </li>
+
+        <li class="card">
+          <img class="card-img" src="images/product-2.svg" alt="HC-S 柔性检测工作站">
+          <div class="card-body">
+            <p class="card-tag">非标定制</p>
+            <h3 class="card-title">HC-S 柔性检测工作站</h3>
+            <p class="card-desc">多品种小批量场景，光源、镜头、治具做成快换模块，配方切换 90 秒内完成。</p>
+          </div>
+        </li>
+
+        <li class="card">
+          <img class="card-img" src="images/product-3.svg" alt="HC-Studio 视觉软件平台">
+          <div class="card-body">
+            <p class="card-tag">软件平台</p>
+            <h3 class="card-title">HC-Studio 视觉软件</h3>
+            <p class="card-desc">图形化流程编排，工艺工程师不用写代码就能改判定规则，模型支持不停机热加载。</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ==================== 4. 技术参数表（课程 4.4.2.3 表格标签 + 2.3 隔行换色） ==================== -->
+  <div class="section section-gray" id="spec">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-tag">技术参数</p>
+        <h2 class="section-title">三款产品对比</h2>
+        <p class="section-desc">表格由 JS 自动完成隔行换色，鼠标移入整行高亮。</p>
+      </div>
+
+      <table class="spec-table" id="specTable">
+        <caption>以下数据来自产品手册，具体以项目方案为准</caption>
+        <thead>
+          <tr>
+            <th>产品型号</th>
+            <th>检测节拍</th>
+            <th>最小可检缺陷</th>
+            <th>换型时间</th>
+            <th>典型检出率</th>
+            <th>适用场景</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HC-V300</td>
+            <td>≤ 0.4 s / 件</td>
+            <td>0.02 mm</td>
+            <td>约 10 分钟</td>
+            <td>99.2%</td>
+            <td>3C 结构件、精密五金</td>
+          </tr>
+          <tr>
+            <td>HC-S 系列</td>
+            <td>≤ 1.0 s / 件</td>
+            <td>0.05 mm</td>
+            <td>≤ 90 秒</td>
+            <td>98.6%</td>
+            <td>汽配混线、新能源</td>
+          </tr>
+          <tr>
+            <td>HC-Studio</td>
+            <td>依赖硬件</td>
+            <td>依赖镜头</td>
+            <td>不停机</td>
+            <td>—</td>
+            <td>已有产线的软件升级</td>
+          </tr>
+          <tr>
+            <td>HC-V300 Pro</td>
+            <td>≤ 0.25 s / 件</td>
+            <td>0.01 mm</td>
+            <td>约 15 分钟</td>
+            <td>99.5%</td>
+            <td>高精度外观全检</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ==================== 5. 关于我们 ==================== -->
+  <div class="section" id="about">
+    <div class="container about-inner">
+      <div class="about-text">
+        <p class="section-tag">关于衡川</p>
+        <h2 class="section-title">把"人眼判断"换成"可复现的规则"</h2>
+        <p class="about-desc">
+          目检最大的问题不是慢，是不稳定。同一个缺陷，早班判良、晚班判次。
+          我们做的事情，本质上是把这种判断变成可复现的规则——同样的光、同样的算法、同样的阈值，第 1 件和第 100 万件结果一致。
+        </p>
+        <p class="about-desc">
+          衡川不卖"万能算法"。每个项目都从样品开始，先确认成像能不能做，再谈方案。
+        </p>
+        <ul class="about-list">
+          <li>2012 年成立于苏州，团队 68 人</li>
+          <li>国家高新技术企业，ISO 9001 认证</li>
+          <li>累计交付 300+ 视觉检测项目</li>
+        </ul>
+      </div>
+      <div class="about-img">
+        <img src="images/product-3.svg" alt="衡川智能视觉软件界面示意">
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 6. 联系我们（表单，课程 4.4.2.2） ==================== -->
+  <div class="section section-gray" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-tag">联系我们</p>
+        <h2 class="section-title">预约一次可行性验证</h2>
+        <p class="section-desc">填写需求，我们会在一个工作日内联系你。带 * 为必填项。</p>
+      </div>
+
+      <div class="contact-inner">
+        <!-- 表单：提交事件由 JS 拦截并校验 -->
+        <form class="form" id="contactForm">
+          <div class="form-item">
+            <label for="name">称呼 *</label>
+            <input type="text" id="name" name="name" placeholder="怎么称呼你">
+            <p class="form-tip" id="nameTip"></p>
+          </div>
+
+          <div class="form-item">
+            <label for="phone">手机号 *</label>
+            <input type="text" id="phone" name="phone" placeholder="11 位手机号">
+            <p class="form-tip" id="phoneTip"></p>
+          </div>
+
+          <div class="form-item">
+            <label for="company">公司名称</label>
+            <input type="text" id="company" name="company" placeholder="你所在的制造企业">
+            <p class="form-tip" id="companyTip"></p>
+          </div>
+
+          <div class="form-item">
+            <label for="message">需求描述 *</label>
+            <textarea id="message" name="message" rows="4" placeholder="产品材质、缺陷类型、目前节拍、期望节拍……"></textarea>
+            <p class="form-tip" id="messageTip"></p>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">提交需求</button>
+          <p class="form-success" id="formSuccess">提交成功，我们会在一个工作日内联系你。（演示页面，数据未真实发送）</p>
+        </form>
+
+        <!-- 联系方式 -->
+        <div class="contact-info">
+          <h3>直接联系我们</h3>
+          <ul>
+            <li><span>电话</span>0512-8888 6666</li>
+            <li><span>邮箱</span>hello@example.com</li>
+            <li><span>地址</span>苏州市工业园区星湖街 328 号</li>
+            <li><span>时间</span>周一至周五 08:30 – 18:00</li>
+          </ul>
+          <p class="contact-note">
+            寄样地址：江苏省苏州市工业园区星湖街 328 号 B 座 4 层，衡川智能 · 项目评估组 收。
+            样品请附说明：材质、缺陷类型、判定标准、目前节拍。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 7. 底部版权（课程 4.4.2.4） ==================== -->
+  <div class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 衡川智能科技有限公司 · 苏 ICP 备 00000000 号</p>
+      <p>本站为个人练习项目，非真实企业官网</p>
+    </div>
+  </div>
+
+  <!-- 回到顶部按钮 -->
+  <div class="to-top" id="toTop">↑</div>
+
+  <!-- JS 引入方式（课程 1.1） -->
+  <script src="js/main.js"></script>
+</body>
+</html>
