@@ -5,7 +5,7 @@
 - **在线预览**：https://luck30-code.github.io/hengchuan-website/
 - **代码仓库**：https://github.com/LUCK30-code/hengchuan-website
 - **技术栈**：HTML + CSS + 原生 JavaScript，零框架、零依赖、零构建
-- **作者**：陆康贤 ｜ 2026.11
+- **作者**：陆康贤 ｜ 2026.10
 
 ---
 
@@ -25,8 +25,6 @@
 
 ## 代码与知识点的对应关系
 
-写这个项目时，我刻意让每一块都对应课上学过的内容，方便自己复盘：
-
 | 代码位置 | 对应知识点 |
 | --- | --- |
 | `index.html` 的 `<link>` 与 `<script>` | CSS / JS 的引入方式 |
@@ -36,10 +34,10 @@
 | `display: flex; flex: 1` | flex 弹性分配 |
 | `.spec-table` | 表格标签与 `border-collapse` |
 | `.form-item input` | 表单项标签与聚焦样式 |
-| `main.js` 的 `stripeTable()` | 课程里的「隔行换色案例」 |
+| `main.js` 的 `stripeTable()` | 隔行换色案例 |
 | `main.js` 的 `checkForm()` | DOM 操作 + 事件监听 + 阻止默认提交 |
 | `main.js` 的 `backToTop()` | 滚动事件 + 固定定位 |
-| `style.css` 末尾的 `@media` | 响应式（课程外自学补充） |
+| `style.css` 末尾的 `@media` | 响应式（ai辅助完成） |
 
 ---
 
